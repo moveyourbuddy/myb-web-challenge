@@ -226,19 +226,19 @@ Use `Flowtype` to type all of your components. This means declaring each props y
 
 #### Bonus #2. Code-spliting
 
-The more code you write, the bigger it gets. To make sure that the app bundle still loads fast, you can use code-splitting to load your components asynchronously.
+The more code you write, the bigger your app gets. To make sure that the js bundle still loads at lighting speed, you can use code-splitting to load your components asynchronously.
 
 Implement code-splitting by using `Suspense` and `lazy` on the different tabs.
 
 #### Bonus #3. Use Hooks
 
-If you've been following the news, there is this new thing in React called Hooks. It's not out yet but you can start using it by upgrading `react` and `react-dom` to `16.7.0-alpha`. (See [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html) on the React website). Hooks are awesome: they make your code leaner, and make it easy to reuse some functionnality accross components.
+If you've been following the news, there is this new thing in React called Hooks. It's not out yet but you can start using it by upgrading `react` and `react-dom` to `16.7.0-alpha`. (See [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html) on the React website). Hooks are awesome: they make your code leaner, and make it easier to reuse some functionality accross multiple components.
 
 Rewrite your `<Fetch />` component using `useState` and `useEffect`.
 
 #### Bonus #4. Use `react-cache`
 
-Like Hooks, `react-cache` is not out yet, but you can start using it. `react-cache` allows you to use `Suspense` and `Concurrent mode` to make your components halt rendering when they need to fetch something from the API (for example).
+Like Hooks, `react-cache` is not out yet, but you can start using it. `react-cache` allows you to use `Suspense` and `Concurrent mode` to make your components halt rendering when they need to fetch something from the API (for example). You'll need to upgrade `react` and `react-dom` to `16.7.0-alpha`.
 
 Install `react-cache` and implement a `FetchAPI` using `unstable_createResource`. Start using it in all your components that use the API.
 
