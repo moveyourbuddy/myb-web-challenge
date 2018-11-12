@@ -6,7 +6,7 @@ Hello, and welcome to the main repository for the **myb-web-challenge**. This ch
 
 The challenge is divided in multiple levels of increasing difficulty. You have to finish those levels in order, as every level depends on the previous one.
 
-Later in the challenge, you'll need to install [myb-web-challenge-server](moveyourbuddy/myb-web-challenge-server). This is the server you'll talk to when making API calls. Since this is a React challenge, you don't have to implement it yourself. All the instructions and documentation are on the repository.
+Later in the challenge, you'll need to install [myb-web-challenge-server](https://github.com/moveyourbuddy/myb-web-challenge-server). This is the server you'll talk to when making API calls. Since this is a React challenge, you don't have to implement it yourself. All the instructions and documentation are on the repository.
 
 **Important**
 
@@ -165,7 +165,7 @@ function UserPanel() {
 
 The `<Fetch />` component receives which call to make to the API through its `path` prop. It also takes a render prop as its children to pass the progress and result of the API call.
 
-To make the API calls, you'll need the [myb-web-challenge-server](moveyourbuddy/myb-web-challenge-server). The instructions and documentation are available on the repo.
+To make the API calls, you'll need the [myb-web-challenge-server](https://github.com/moveyourbuddy/myb-web-challenge-server). The instructions and documentation are available on the repo.
 
 Don't forget to handle the loading and the error state in your components!
 
