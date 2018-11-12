@@ -212,7 +212,7 @@ Either way, you can be proud of what you have done! We hope that you had fun and
 
 ---
 
-### <span style="color: red">B</span><span style="color:orange">o</span><span style="color: green">n</span><span style="color: blue">u</span><span style="color: black">s</span> level 💪
+### Bonus level 💪
 
 All right! You didn't have enough, well we've got more! If you want to show off your skills, now is the time.
 
@@ -256,4 +256,4 @@ function UserPanel({ playerId }) {
 }
 ```
 
-Notice how cleaner the code is.
+Notice how cleaner the code is 🤩.
