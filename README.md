@@ -18,7 +18,7 @@ If you have any questions regarding the challenge, don't hesitate to send us a m
 
 What you are going to build is a web app where you can simply see the profile of a Player. That's it.
 
-On the Profile page, there is a panel on the left that show basic informations about the Player and two tabs: one that shows all of the upcoming events a Player has, and one that shows all of his/her friends.
+On the Profile page, there is a panel on the left that shows basic informations about the Player and two tabs: one with all of the upcoming events a Player has, and one with all of his/her friends.
 
 <details>
   <summary>
@@ -36,7 +36,7 @@ The app is divided in three main blocks, that we'll build as separate components
 
 #### `<UserPanel />`
 
-The `UserPanel` is reponsible for presenting basic information about the Player. It is the panel that is located on the left side of the page.
+The `UserPanel` is reponsible for presenting basic informations about the Player, like his name and the city he came from. It is the panel that is located on the left side of the page.
 
 #### `<UpcomingEventsTab />`
 
@@ -131,9 +131,9 @@ function ProfilePage() {
 }
 ```
 
-You can see that the `<Tabs />` component relies on its children to know which tabs to show. It uses the `title` prop on these children to know what to show in the `<TabBar />` component.
+You can see that the `<Tabs />` component relies on its children to know which tabs to show. It uses the `title` prop on these children to know what title to use in the `<TabBar />` component.
 
-By default, it shows the first tab, but when you click on a different tab in the `<TabBar />`, the `<Tabs />` component is responsible for tracking which tab is active and rendering it.
+By default, it renders the first tab, but when you click on a different tab in the `<TabBar />`, the `<Tabs />` component is responsible for tracking which tab is active and rendering it.
 
 > **Level #2 - Checklist**
 >
@@ -226,7 +226,7 @@ Use `Flowtype` to type all of your components. This means declaring each props y
 
 #### Bonus #2. Code-spliting
 
-The more code you write, the bigger your app gets. To make sure that the js bundle still loads at lighting speed, you can use code-splitting to load your components asynchronously.
+The more code you write, the bigger your app gets. To make sure that the js bundle still loads at lightning speed, you can use code-splitting to load your components asynchronously.
 
 Implement code-splitting by using `Suspense` and `lazy` on the different tabs.
 
@@ -234,15 +234,15 @@ Implement code-splitting by using `Suspense` and `lazy` on the different tabs.
 
 > **EDIT**: Hooks are now available! 🎉 There's no need to fiddle with the versions of `react` anymore in order to use hooks!
 
-If you've been following the news, there is this new thing in React called Hooks. ~~It's not out yet but you can start using it by upgrading `react` and `react-dom` to `16.7.0-alpha`~~. (See [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html) on the React website). Hooks are awesome: they make your code leaner, and make it easier to reuse some functionality accross multiple components.
+If you've been following the news, you know there is this new thing in React called Hooks. ~~It's not out yet but you can start using it by upgrading `react` and `react-dom` to `16.7.0-alpha`. (See [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html) on the React website)~~. Hooks are awesome: they make your code leaner, and make it easier to reuse some functionality accross multiple components.
 
 Rewrite your `<Fetch />` component using `useState` and `useEffect`.
 
 #### Bonus #4. Use `react-cache`
 
-> **EDIT**: A lot has changed this this challenge was first issued. As of today, the procedure to experiment with `react-cache` is a bit more involved, as explained in [this issue](https://github.com/facebook/react/issues/14780#issuecomment-477644546).
+> **EDIT**: A lot has changed this this challenge was first issued. As of today, the procedure to experiment with `react-cache` is a bit more involved, as explained in [this issue](https://github.com/facebook/react/issues/14780#issuecomment-477644546). Since this solution relies on building `react` on your machine, you'll need to have `yarn` installed.
 
-Like Hooks, `react-cache` is not out yet, but you can start using it. `react-cache` allows you to use `Suspense` and `Concurrent mode` to make your components halt rendering when they need to fetch something from the API (for example). ~~You'll need to upgrade `react` and `react-dom` to `16.7.0-alpha`.~~
+Like Hooks, `react-cache` is not out yet, but you can start using it. `react-cache` allows you to use `Suspense` and `concurrent mode` to make your components halt rendering (when they need to fetch something from the API for example). ~~You'll need to upgrade `react` and `react-dom` to `16.7.0-alpha`.~~
 
 Install `react-cache` and implement a `FetchAPI` using `unstable_createResource`. Start using it in all your components that use the API.
 
