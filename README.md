@@ -232,13 +232,17 @@ Implement code-splitting by using `Suspense` and `lazy` on the different tabs.
 
 #### Bonus #3. Use Hooks
 
-If you've been following the news, there is this new thing in React called Hooks. It's not out yet but you can start using it by upgrading `react` and `react-dom` to `16.7.0-alpha`. (See [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html) on the React website). Hooks are awesome: they make your code leaner, and make it easier to reuse some functionality accross multiple components.
+> **EDIT**: Hooks are now available! 🎉 There's no need to fiddle with the versions of `react` anymore in order to use hooks!
+
+If you've been following the news, there is this new thing in React called Hooks. ~~It's not out yet but you can start using it by upgrading `react` and `react-dom` to `16.7.0-alpha`~~. (See [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html) on the React website). Hooks are awesome: they make your code leaner, and make it easier to reuse some functionality accross multiple components.
 
 Rewrite your `<Fetch />` component using `useState` and `useEffect`.
 
 #### Bonus #4. Use `react-cache`
 
-Like Hooks, `react-cache` is not out yet, but you can start using it. `react-cache` allows you to use `Suspense` and `Concurrent mode` to make your components halt rendering when they need to fetch something from the API (for example). You'll need to upgrade `react` and `react-dom` to `16.7.0-alpha`.
+> **EDIT**: A lot has changed this this challenge was first issued. As of today, the procedure to experiment with `react-cache` is a bit more involved, as explained in [this issue](https://github.com/facebook/react/issues/14780#issuecomment-477644546).
+
+Like Hooks, `react-cache` is not out yet, but you can start using it. `react-cache` allows you to use `Suspense` and `Concurrent mode` to make your components halt rendering when they need to fetch something from the API (for example). ~~You'll need to upgrade `react` and `react-dom` to `16.7.0-alpha`.~~
 
 Install `react-cache` and implement a `FetchAPI` using `unstable_createResource`. Start using it in all your components that use the API.
 
